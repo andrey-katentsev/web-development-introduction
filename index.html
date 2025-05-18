@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A simple portfolio website to showcase projects and skills.">
+	<meta name="keywords" content="portfolio, web development, projects, skills">
+	<meta name="author" content="Author Name">
+  <title>Portfolio Project</title>
+  <link rel="stylesheet" href="portfolio.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<h1>Welcome to My Portfolio website!</h1>
+		<nav role="navigation">
+			<ul>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>This is a brief introduction about myself.<br>
+		I am a web developer with a passion for creating beautiful and functional websites.<br>
+		I have experience in HTML, CSS, and JavaScript.<br>
+		In my free time, I enjoy learning new technologies and working on personal projects.<br>
+		Feel free to explore my portfolio and reach out if you have any questions!</p>
+	</section>
+
+	<main>		
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+			</ul>
+		</section>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<p>Here are some of my projects.</p>
+
+			 <div id="modal-image-frame" class="modal">
+				<span class="close">&times;</span> <!-- 'close' button -->
+				<img id="modal-image" class="modal-content"> <!-- modal: content (image) -->
+				<div id="caption"></div> <!-- modal: caption (image text) -->
+			</div>
+
+			<article>
+				<h3>Project A</h3>
+				<img id="image-a" src="img/project-a.png" alt="Project A Overview">
+				<p>Description of Project A.</p>
+				<p>Technologies used: HTML, CSS, JavaScript</p>
+				<p><a href="https://example.com/project-a">View Project</a></p>
+			</article>
+			<article>
+				<h3>Project B</h3>
+				<img id="image-b" src="img/project-b.png" alt="Project B Overview">
+				<p>Description of Project B.</p>
+				<p>Technologies used: HTML, CSS, JavaScript</p>
+				<p><a href="https://example.com/project-b">View Project</a></p>
+			</article>
+			<article>
+				<h3>Project C</h3>
+				<img id="image-c"src="img/project-c.jpg" alt="Project C Overview">
+				<p>Description of Project C.</p>
+				<p>Technologies used: HTML, CSS, JavaScript</p>
+				<p><a href="https://example.com/project-b">View Project</a></p>
+			</article>
+		</section>
+	</main>
+
+	<section id="contact">
+		<h3>Contact Me</h3>
+		<form action="https://www.w3schools.com/action_page.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" placeholder="A couple of words..." required rows="4" cols="50" required></textarea><br>
+			<input type="submit" value="Submit">
+	</section>
+
+	<footer>
+		<p>&copy; 2025 My Portfolio</p>
+	</footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
